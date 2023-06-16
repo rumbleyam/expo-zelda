@@ -6,7 +6,7 @@ def games():
     url = (GAMES_LIST_ENDPOINT)
     response = requests.get(url=url)
     print(response.json())
-    return response.json
+    return response.json()
 
 def retrieve_game_id(game_id: str):
     print("Called retrieve_game_id() with " + game_id)
@@ -15,4 +15,4 @@ def retrieve_game_id(game_id: str):
     else:
         url = (GAMES_LIST_ENDPOINT + ":" + game_id)
     response = requests.get(url=url)
-    return response.json 
+    return response.json() 

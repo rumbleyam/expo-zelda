@@ -1,10 +1,11 @@
 import scripts.characters
 
-
-def retrieve_characters_name_success():
+def test_retrieve_characters_name_success():
     response = scripts.characters.retrieve_characters_name("Zelda")
-    assert response.success == "True"
+    print(response)
+    assert response["success"] == True
 
-def retrieve_characters_name_failure():
+def test_retrieve_characters_name_empty():
     response = scripts.characters.retrieve_characters_name("RUMBLEYAM")
-    assert response.success == "False"
+    print(response)
+    assert response["count"] == 0
