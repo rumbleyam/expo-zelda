@@ -15,6 +15,4 @@ def retrieve_game_id(game_id: str):
     else:
         url = (GAMES_LIST_ENDPOINT + ":" + game_id)
     response = requests.get(url=url)
-    print(url)
-    print(response.json())
     return response.json 
