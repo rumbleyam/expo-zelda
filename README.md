@@ -1,7 +1,7 @@
 # expo-zelda
 
 
-##Cloning and testing
+## Cloning and testing
 
 ```
 git clone <your git clone url>
